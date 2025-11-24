@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/assets/">
+    <File Path="Build.ps1" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Version.props" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Project Path="src/ByteGuard.FileValidator.Scanners.Amsi/ByteGuard.FileValidator.Scanners.Amsi.csproj" />
+</Solution>
