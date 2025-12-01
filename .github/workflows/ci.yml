@@ -14,7 +14,7 @@ env:
 jobs:
   build:
 
-    # We need to run on Windows as we're supporting .NET Framework
+    # We need to run on Windows as we're supporting .NET Framework and using MIcrosoft AMSI
     runs-on: windows-latest
 
     permissions:
