@@ -1,4 +1,4 @@
-namespace ByteGuard.FileValidator.Scanners.Amsi.Integration;
+namespace ByteGuard.FileValidator.Scanner.Amsi.Integration;
 
 /// <summary>
 /// Result returned by AMSI.

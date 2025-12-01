@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="../../src/ByteGuard.FileValidator.Scanners.Amsi/ByteGuard.FileValidator.Scanners.Amsi.csproj" />
+      <ProjectReference Include="../../src/ByteGuard.FileValidator.Scanner.Amsi/ByteGuard.FileValidator.Scanner.Amsi.csproj" />
     </ItemGroup>
 
     <ItemGroup>

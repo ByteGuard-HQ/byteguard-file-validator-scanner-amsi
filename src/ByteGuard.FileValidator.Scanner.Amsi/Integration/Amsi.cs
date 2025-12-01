@@ -1,7 +1,9 @@
 using System.Runtime.InteropServices;
+#if NET5_0_OR_GREATER
 using System.Runtime.Versioning;
+#endif
 
-namespace ByteGuard.FileValidator.Scanners.Amsi.Integration;
+namespace ByteGuard.FileValidator.Scanner.Amsi.Integration;
 
 /// <summary>
 /// Dynamically loaded Antimalware Scan Interface from System32. Will only work on Windows clients and servers.

@@ -1,4 +1,4 @@
-namespace ByteGuard.FileValidator.Scanners.Amsi;
+namespace ByteGuard.FileValidator.Scanner.Amsi;
 
 /// <summary>
 /// Configuration for the Microsoft Antimalware Scan Interface (AMSI) scanner.

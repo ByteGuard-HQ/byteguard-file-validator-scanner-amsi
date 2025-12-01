@@ -8,7 +8,7 @@
     <File Path=".github/workflows/ci.yml" />
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="tests/ByteGuard.FileValidator.Scanners.Amsi.Tests.Unit/ByteGuard.FileValidator.Scanners.Amsi.Tests.Unit.csproj" />
+    <Project Path="tests/ByteGuard.FileValidator.Scanner.Amsi.Tests.Unit/ByteGuard.FileValidator.Scanner.Amsi.Tests.Unit.csproj" />
   </Folder>
-  <Project Path="src/ByteGuard.FileValidator.Scanners.Amsi/ByteGuard.FileValidator.Scanners.Amsi.csproj" />
+  <Project Path="src/ByteGuard.FileValidator.Scanner.Amsi/ByteGuard.FileValidator.Scanner.Amsi.csproj" />
 </Solution>
