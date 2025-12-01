@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net481;net8.0;net9.0;net10.0</TargetFrameworks>
+    <Authors>ByteGuard Contributors</Authors>
+    <Description>ByteGuard File Validator Microsoft Antimalware Scan Interface (AMSI) antimalware scanner.</Description>
+    <PackageProjectUrl>https://github.com/ByteGuard-HQ/byteguard-file-validator-scanner-amsi</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ByteGuard-HQ/byteguard-file-validator-scanner-amsi</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>byteguard file-validator scanner amsi</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <Copyright>Copyright © ByteGuard Contributors</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
