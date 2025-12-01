@@ -8,6 +8,8 @@
 > ⚠️ **Important:** This package is one layer in a defense-in-depth strategy.  
 > It does **not** replace endpoint protection, sandboxing, input validation, or other security controls.
 
+> ⚠️ **Important:** This package uses the Microsoft Antimalware Scan Interface (AMSI) and will submit content to the installed antimalware engine on the host (_e.g., Microsoft Defender_). Malicious samples or test files (_such as the EICAR test file_) may trigger alerts and incidents in your security monitoring. Make sure your security/operations team is aware of this integration before running tests in shared or production environments.
+
 ## Features
 
 - **AMSI-based** implementation of `IAntimalwareScanner` for `ByteGuard.FileValidator`
@@ -21,7 +23,6 @@
   - An AMSI-integrated antimalware engine installed and enabled (_e.g. Microsoft Defender Antivirus_).
 - **Core packages**
   - [`ByteGuard.FileValidator`](https://www.nuget.org/packages/ByteGuard.FileValidator)
-  - Optionally [`ByteGuard.FileValidator.Extensions.DependencyInjection`](https://www.nuget.org/packages/ByteGuard.FileValidator.Extensions.DependencyInjection) for `Microsoft.Extensions.DependencyInjection` integration
 
 ## Getting Started
 
@@ -88,6 +89,15 @@ public async Task<IActionResult> Upload(IFormFile file)
     return Ok();
 }
 ```
+
+### Testing the AMSI integration
+
+If you verify the integration using known test signatures (for example, the EICAR test file), be aware that:
+
+- The installed AV engine may quarantine or block the file.
+- Alerts may be raised and forwarded to your SIEM / security team.
+- In tightly monitored environments, you should coordinate with your security team before running such tests.
+
 
 ## Security notes & limitations
 
