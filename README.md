@@ -1,7 +1,7 @@
 
-# ByteGuard.FileValidator.Scanners.Amsi ![NuGet Version](https://img.shields.io/nuget/v/ByteGuard.FileValidator.Scanners.Amsi)
+# ByteGuard.FileValidator.Scanner.Amsi ![NuGet Version](https://img.shields.io/nuget/v/ByteGuard.FileValidator.Scanners.Amsi)
 
-`ByteGuard.FileValidator.Scanners.Amsi` is a Microsoft Antimalware Scan Interface (AMSI) specific antimalware scanner implementation for [`ByteGuard.FileValidator`](https://www.nuget.org/packages/ByteGuard.FileValidator).
+`ByteGuard.FileValidator.Scanner.Amsi` is a Microsoft Antimalware Scan Interface (AMSI) specific antimalware scanner implementation for [`ByteGuard.FileValidator`](https://www.nuget.org/packages/ByteGuard.FileValidator).
 
  AMSI is a Windows API that allows applications to submit content for scanning and receive a verdict from the installed antimalware provider. It lets you route files through the OS antimalware engine (_for example Microsoft Defender or any other AMSI-integrated AV_) before they’re accepted by your application.
 
@@ -27,18 +27,18 @@
 ## Getting Started
 
 ### Installation
-This package is published and installed via [NuGet](https://www.nuget.org/packages/ByteGuard.FileValidator.Scanners.Amsi).
+This package is published and installed via [NuGet](https://www.nuget.org/packages/ByteGuard.FileValidator.Scanner.Amsi).
 
 Reference the package in your project:
 ```bash
-dotnet add package ByteGuard.FileValidator.Scanners.Amsi
+dotnet add package ByteGuard.FileValidator.Scanner.Amsi
 ```
 
 ## Usage
 
 ```csharp
 using ByteGuard.FileValidator;
-using ByteGuard.FileValidator.Scanners.Amsi;
+using ByteGuard.FileValidator.Scanner.Amsi;
 
 var amsiConfig = new AmsiScannerConfiguration()
 {
@@ -108,4 +108,5 @@ If you verify the integration using known test signatures (for example, the EICA
   - Endpoint protection and monitoring
 
 ## License
-_ByteGuard.FileValidator.Scanners.Amsi is Copyright © ByteGuard Contributors - Provided under the MIT license._
+
+_ByteGuard.FileValidator.Scanner.Amsi is Copyright © ByteGuard Contributors - Provided under the MIT license._
