@@ -6,6 +6,7 @@
     <File Path="LICENSE" />
     <File Path="README.md" />
     <File Path=".github/workflows/ci.yml" />
+    <File Path="SECURITY.md" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/ByteGuard.FileValidator.Scanner.Amsi.Tests.Unit/ByteGuard.FileValidator.Scanner.Amsi.Tests.Unit.csproj" />
